@@ -1,0 +1,177 @@
+:root{
+    --black: #000000;
+    --maracuya: #FFC107;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Nav Bar */
+
+nav {
+    background-color: var(--maracuya);
+    color: var(--black);
+    height: 60px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > ul > li {
+    margin: 1.5% 1% 0 0;
+}
+
+nav > ul > li > a {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav > ul > li > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Main  */
+
+main {
+    position: relative;
+}
+
+.main-page-header {
+    height: 100vh;
+    position: relative;
+}
+
+.main-page-header > h1 {
+    font-size: 5em;
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+.header-buttons {
+    font-size: 35px;
+    z-index: 1;
+    position: absolute;
+    left: 37%;
+    top: 70%;
+    z-index: 1;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    background-color: var(--maracuya);
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--black);
+    text-align: center;
+    transition: all 0.2s;
+    margin: 0 0.3em 0.3em 0;
+}
+
+/* .main-page-header span {
+    display: inline-block;
+} */
+
+/* #header-button-left {
+    float: left;
+}
+
+#header-button-right {
+    float: right;
+} */
+
+.main-page-header > button:hover {
+    color:#000000;
+    background-color: var(--white);
+}
+
+#intro-drink-pic {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: brightness(30%);
+}
+
+.maracuya-mission-company > h1{
+    margin-top: 5%;
+    text-align: center;
+    color: var(--maracuya)
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--maracuya);
+    color: var(--black);
+    height: auto;
+}
+
+footer > table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+ 
+table {
+    border-spacing: 30px;
+    border-collapse: separate;
+}
+
+table tr td {
+    padding-top: 20px;
+}
+
+table > tbody > tr > td > a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+table > tbody > tr > td > a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#footer-packages-button {
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#3369ff;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+#footer-packages-button:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 1%;
+}
